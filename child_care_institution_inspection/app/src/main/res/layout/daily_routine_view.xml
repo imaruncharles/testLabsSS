@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <LinearLayout
+            style="@style/questionBackCardStyle"
+            android:background="@drawable/question_back_card"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/messCommittees_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textFieldStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every institution should constitute a mess committees with the membership of children/ juvenile to plan and decide their menu. A nutrition expert shall be a member of the committee who shall ensure that the food served is balanced, nutritious and varied" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:hint="Remarks" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/questionBackCardStyle"
+            android:background="@drawable/question_back_card"
+        app:layout_constraintTop_toBottomOf="@id/messCommittees_Lay"
+        android:id="@+id/messCommittees_Lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Every institution should constitute a mess committees with the membership of children/ juvenile to plan and decide their menu. A nutrition expert shall be a member of the committee who shall ensure that the food served is balanced, nutritious and varied" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
