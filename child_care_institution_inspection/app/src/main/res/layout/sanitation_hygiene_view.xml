@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+
     android:id="@+id/sanitationHygieneConstraintlayout"
     android:layout_height="match_parent">
 
@@ -17,6 +18,9 @@
 
 
     <LinearLayout
+
+        style="@style/questionBackCardStyle"
+        android:background="@drawable/question_back_card"
         android:id="@+id/drinkingWaterLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,30 +35,60 @@
             android:text="Sufficient purified drinking water, water filter" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
+
+
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:gravity="right"
-            android:hint="Remarks" />
+            android:hint="@string/remarks" />
     </LinearLayout>
 
     <LinearLayout
+        style="@style/questionBackCardStyle"
+        android:background="@drawable/questions_background_card_alter"
         android:id="@+id/bathingWaterLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,19 +103,45 @@
             android:text="Sufficient water for bathing and washing cloths maintenance and cleanliness of the premises" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText
@@ -93,6 +153,8 @@
     </LinearLayout>
 
     <LinearLayout
+        style="@style/questionBackCardStyle"
+        android:background="@drawable/question_back_card"
         android:id="@+id/garbageLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,19 +169,27 @@
             android:text="Arrangements for disposal of garbage" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                style="@style/radioButtonStyle"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                style="@style/radioButtonStyle"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText
@@ -131,6 +201,8 @@
     </LinearLayout>
 
     <LinearLayout
+        style="@style/questionBackCardStyle"
+        android:background="@drawable/questions_background_card_alter"
         android:id="@+id/mosquitoLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -145,19 +217,45 @@
             android:text="Protection from mosquitoes by providing mosquito nets " />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText
@@ -183,19 +281,45 @@
             android:text="Sufficient no of toilets in the portion of one latrine/ toilet for 7 children" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText
@@ -207,6 +331,8 @@
     </LinearLayout>
 
     <LinearLayout
+        style="@style/questionBackCardStyle"
+        android:background="@drawable/questions_background_card_alter"
         android:id="@+id/sufficientBathroomLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -221,19 +347,45 @@
             android:text="Sufficient no of bathroom , in the preparation of at least one bathroom for 10 children" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText
@@ -259,19 +411,45 @@
             android:text="Clean and fly- proof kitchen and separate area for washing utensils" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText
@@ -283,6 +461,8 @@
     </LinearLayout>
 
     <LinearLayout
+        android:background="@drawable/questions_background_card_alter"
+        style="@style/questionBackCardStyle"
         android:id="@+id/dryingBeddingClothingLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -297,19 +477,45 @@
             android:text="Open space for drying of bedding and clothing" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText
@@ -335,19 +541,45 @@
             android:text="Utmost cleanliness in medical Centre" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/yes" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/yes"
+                />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
+
+            <me.omidh.liquidradiobutton.LiquidRadioButton
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/no" />
+                app:lrb_strokeWidth="1dp"
+                app:lrb_explodeCount="3"
+                android:padding="40dp"
+                app:lrb_outterPadding="8dp"
+                app:lrb_innerCircleRadius="15dp"
+                app:lrb_strokeRadius="23dp"
+                app:lrb_inAnimDuration="500"
+                app:lrb_outAnimDuration="500"
+                app:lrb_checkedColor="@android:color/holo_green_dark"
+                app:lrb_unCheckedColor="@android:color/holo_red_light"
+                android:text="@string/no"
+                />
         </RadioGroup>
 
         <EditText

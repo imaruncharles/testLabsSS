@@ -199,12 +199,37 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/OwnOrRent"
+        style="@style/textFieldStyle"
         android:layout_marginTop="5dp"
         android:text="Own/Rent"
         app:layout_constraintTop_toBottomOf="@+id/grant_aidReceivedInPreviousYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <RadioGroup
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/own_rentRadioGroup"
+        app:layout_constraintTop_toBottomOf="@id/OwnOrRent"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/own" />
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/rent"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+ <!--   <RadioGroup
         android:id="@+id/own_rentRadioGroup"
         app:layout_constraintTop_toBottomOf="@id/OwnOrRent"
         android:orientation="vertical"
@@ -222,7 +247,9 @@
             app:layout_constraintTop_toBottomOf="@id/ownRadioBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-    </RadioGroup>
+
+
+    </RadioGroup>-->
 
 
     <Button

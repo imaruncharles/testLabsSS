@@ -28,21 +28,26 @@
             android:layout_height="wrap_content"
             android:text="1 Superintendent?" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -65,21 +70,25 @@
             android:layout_height="wrap_content"
             android:text="1 Counselor?" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -102,21 +111,25 @@
             android:layout_height="wrap_content"
             android:text="1 Probation officer/child Welfare officer" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -139,21 +152,25 @@
             android:layout_height="wrap_content"
             android:text="House mother / house father" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -176,21 +193,25 @@
             android:layout_height="wrap_content"
             android:text="Primary Teacher/ Voluntary / Part Time" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -213,21 +234,25 @@
             android:layout_height="wrap_content"
             android:text="1 Doctor (part time)" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -250,21 +275,25 @@
             android:layout_height="wrap_content"
             android:text="1 Paramedical Staff" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -287,21 +316,25 @@
             android:layout_height="wrap_content"
             android:text="is 1 Store keeper cum accountant?" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -324,21 +357,25 @@
             android:layout_height="wrap_content"
             android:text="1 Art and Craft cum Music teacher?" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -361,21 +398,25 @@
             android:layout_height="wrap_content"
             android:text="1 Cook?" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -398,21 +439,25 @@
             android:layout_height="wrap_content"
             android:text="1 helper?" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -435,21 +480,25 @@
             android:layout_height="wrap_content"
             android:text="1 House keeper?" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -472,21 +521,25 @@
             android:layout_height="wrap_content"
             android:text="Total number of staffs" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:text="@string/yes" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/no"/>
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
-        </RadioGroup>
+        </com.google.android.material.chip.ChipGroup>
 
         <EditText
             android:layout_width="match_parent"
