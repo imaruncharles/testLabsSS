@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_inspection"
+            android:icon="@drawable/ic_baseline_pending_actions_24"
+            android:title="@string/new_inspection" />
+
+        <item
+            android:id="@+id/nav_documentVerification"
+            android:icon="@drawable/ic_baseline_attach_file_24"
+            android:title="@string/document_verification" />
+
+        <item
+            android:id="@+id/nav_status"
+            android:icon="@drawable/ic_baseline_pending_24"
+            android:title="@string/status" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_baseline_chat_24"
+            android:title="@string/chat" />
+
+    </group>
+</menu>

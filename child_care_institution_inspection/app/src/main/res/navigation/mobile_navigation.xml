@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Home">
+
+
+
+    <fragment
+        android:id="@+id/nav_Home"
+        android:name="com.in22labs.myapplication.ui.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/nav_inspection"
+        android:name="com.in22labs.myapplication.ui.ui.inspection.NewInspection"
+        android:label="@string/new_inspection"
+        tools:layout="@layout/activity_cci_inspection_form" />
+
+    <fragment
+        android:id="@+id/nav_documentVerification"
+        android:name="com.in22labs.myapplication.ui.ui.documentVerification.DocumentVerificationFragment"
+        android:label="@string/document_verification"
+        tools:layout="@layout/document_verification_fragment" />
+
+    <fragment
+        android:id="@+id/nav_status"
+        android:name="com.in22labs.myapplication.ui.ui.status.StatusFragment"
+        android:label="@string/status"
+        tools:layout="@layout/status_fragment" />
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.in22labs.myapplication.ui.ui.chat.ChatFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/chat_fragment" />
+
+
+</navigation>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cci_institution_constraintLay"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        style="@style/textTitleStyle"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cci_inspection_form_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cci_inspection_form"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/nameOfInstitutionTxt"
+        style="@style/textFieldStyle"
+        app:layout_constraintTop_toBottomOf="@+id/cci_inspection_form_head"
+        android:layout_width="match_parent"
+        android:text="@string/name_of_the_institutions"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        app:layout_constraintTop_toBottomOf="@id/nameOfInstitutionTxt"
+        android:id="@+id/nameOfInstitutionSpinner"
+        android:layout_width="match_parent"
+        android:entries="@array/nameOfInstitutionListDummy"
+        android:layout_height="wrap_content"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/address"
+        app:layout_constraintTop_toBottomOf="@id/nameOfInstitutionSpinner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateOfRegistrationOfIns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/date_of_registration"
+        app:layout_constraintTop_toBottomOf="@id/addressField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateOfVisitField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/date_of_visit"
+        app:layout_constraintTop_toBottomOf="@id/dateOfRegistrationOfIns">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/noOfSanctionedStrength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/no_of_sanctioned_strength"
+        app:layout_constraintTop_toBottomOf="@id/dateOfVisitField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/noOfChildrenTheTimeOfVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/no_of_children_at_the_time_of_visit"
+        app:layout_constraintTop_toBottomOf="@id/noOfSanctionedStrength">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@color/white"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/noOfBoys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/no_of_boys"
+        app:layout_constraintTop_toBottomOf="@id/noOfChildrenTheTimeOfVisit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="number"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/noOfGirls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/no_of_girls"
+        app:layout_constraintTop_toBottomOf="@id/noOfBoys">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="number"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/total"
+        app:layout_constraintTop_toBottomOf="@id/noOfGirls">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@color/white"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/avgStrengthForTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/avg_strength_for_the_month"
+        app:layout_constraintTop_toBottomOf="@id/total">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@color/white"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/grant_aidReceivedInPreviousYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/grant_aid_received_in_previous_year"
+        app:layout_constraintTop_toBottomOf="@id/avgStrengthForTheMonth">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@color/white"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/OwnOrRent"
+        android:layout_marginTop="5dp"
+        android:text="Own/Rent"
+        app:layout_constraintTop_toBottomOf="@+id/grant_aidReceivedInPreviousYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/own_rentRadioGroup"
+        app:layout_constraintTop_toBottomOf="@id/OwnOrRent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:text="@string/own"
+            android:id="@+id/ownRadioBtn"
+            app:layout_constraintTop_toBottomOf="@id/OwnOrRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:text="Rent"
+            android:id="@+id/rentRadioBtn"
+            app:layout_constraintTop_toBottomOf="@id/ownRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/institutionFormNextBtn"
+        android:text="@string/next"
+        app:layout_constraintTop_toBottomOf="@+id/own_rentRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

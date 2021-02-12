@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dietScaleConstraintLay"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/diet_scaleHeadText"
+        style="@style/textTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Diet Scale"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/diet_scale_act_rules_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/diet_scaleHeadText">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/drinkingWaterText"
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The diet scale should be in accordance with provision of the state rules under juvenile justice act 2000 for each state which would be based on food habits" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/messCommittees_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/diet_scale_act_rules_Lay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Every institution should constitute a mess committees with the membership of children/ juvenile to plan and decide their menu. A nutrition expert shall be a member of the committee who shall ensure that the food served is balanced, nutritious and varied" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dietScaleQuantity_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/messCommittees_Lay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The diet scale should include adequate quantity of cereals ,pulses, vegetables, fruits, eggs, milk, meat and fish in accordance with the local dietary habits" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/specialMenu_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/dietScaleQuantity_Lay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special menu should be provided on holidays, festivals and to the sick children/ juvenile as requires" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/specialMenu_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dietScaleBack"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/dietScaleNext"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/next"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

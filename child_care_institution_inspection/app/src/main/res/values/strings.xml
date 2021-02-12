@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">cci_inspection</string>
+    <string name="address">Address</string>
+    <string name="date_of_registration">Date Of Registration</string>
+    <string name="no_of_sanctioned_strength">No of Sanctioned Strength</string>
+    <string name="avg_strength_for_the_month">Avg Strength For The Month</string>
+    <string name="total">Total</string>
+    <string name="no_of_girls">No Of Girls</string>
+    <string name="no_of_boys">No Of Boys</string>
+    <string name="no_of_children_at_the_time_of_visit">No Of Children at The Time Of Visit</string>
+    <string name="date_of_visit">Date Of Visit</string>
+    <string name="cci_inspection_form">CCI Inspection Form</string>
+    <string name="grant_aid_received_in_previous_year">Grant aid received in previous year</string>
+    <string name="own">Own</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cci_inspection">CCI - Inspection</string>
+    <string name="title_activity_cci_home">CciHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">cci_inspection@cci.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Home</string>
+    <string name="new_inspection">New Inspection</string>
+    <string name="status">Status</string>
+    <string name="name_of_the_institutions">Name of the institutions</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="chat">Chat</string>
+    <string name="document_verification">Document Verification</string>
+
+    <string-array name="nameOfInstitutionListDummy">
+        <item>Select Institution</item>
+        <item>CCI - A</item>
+        <item>CCI - B</item>
+        <item>CCI - C</item>
+        <item>CCI - D</item>
+    </string-array>
+</resources>

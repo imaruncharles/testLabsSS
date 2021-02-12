@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/mainScrollView"
+    tools:context=".ui.CciInspectionForm">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:paddingBottom="20dp"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/cci_inspection_institution_formLayout"
+            layout="@layout/cci_inspection_instituation_form"/>
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="* If the Following Each Criteria Meeting the standards give YES/NO"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include
+            android:id="@+id/building_accommodation_includeLay"
+            layout="@layout/building_accommodation"/>
+        <include
+            android:id="@+id/sanitation_hygiene_view_includeLay"
+            layout="@layout/sanitation_hygiene_view"/>
+        <include
+            android:id="@+id/staff_pattern_form_view_includeLay"
+            layout="@layout/staff_pattern_form_view"/>
+        <include layout="@layout/medical_fecilities_view"
+            android:id="@+id/medicalFacility_includeView"/>
+
+        <include layout="@layout/diet_scale_view"
+            android:id="@+id/dietScaleIncludeLay"/>
+
+
+        <include layout="@layout/clothing_bedding_view"
+            android:id="@+id/clothingBeddingIncludeLay"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

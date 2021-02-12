@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/medicalFacilityConstraintLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/medicalFacilityHeadText"
+        style="@style/textTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Medical Facilities"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/regularHealthCheckUpLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/medicalFacilityHeadText">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/drinkingWaterText"
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regular health check up is conducted and there is a doctor on call and he/ she should visit the Institution every alternate day. Institution should tie up with local PHCs for providing medical facilities to children" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sufficientMedicalLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/regularHealthCheckUpLay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sufficient medical equipments to handle minor health problem including first aid kit with stock of emergency medicines and consumables " />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arrangementsImmunisationLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/sufficientMedicalLay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrangements are made for the immunisation coverage" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeReferralLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/arrangementsImmunisationLay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time referral is made for children /juvenile  with deteriorating health or serious ailments to the nearest civil hospital or recognised treatment centre" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/allStaffTrainedFirstAidTreatMentLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/timeReferralLay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All institutional staff is trained in first aid treatment" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/allStaffTrainedFirstAidTreatMentLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/medicalFacilityBack"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/medicalFacilityNext"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/next"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

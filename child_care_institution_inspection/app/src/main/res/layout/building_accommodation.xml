@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/buildingAndAccommodationConstraintLay"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/buildAccommodationHead"
+            style="@style/textTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Building And Accommodation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dormitoriesText"
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 dormitories each 1000 sq ft for 25 children ie. 2000 sq ft"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/buildAccommodationHead" />
+
+        <RadioGroup
+            android:id="@+id/dormitoriesRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/dormitoriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/classroomsText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/dormitoriesRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="2 classrooms 300 sq ft for 25 children ie. 600 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/classroomsRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/classroomsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sickText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/classroomsRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Sick room/ first aid room - 75 sq ft for 10 children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/sickRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/sickText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/kitchenText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/sickRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Kitchen 250 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/kitchenRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/kitchenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/diningText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/kitchenRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Dining hall 800 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/diningRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/diningText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/storeRoomText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/diningRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Store room 250 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/storeRoomRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/storeRoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/receptionRoomText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/storeRoomRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Reception room 300 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/receptionRoomRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/receptionRoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/libraryText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/receptionRoomRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Library 500 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/libraryRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/libraryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bathRoomText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/libraryRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="5 bathrooms 25 sq ft each ie. 200 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/bathRoomRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/bathRoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/toiletsText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/bathRoomRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="8 toilets/ latrines 25 sq ft each ie 200 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/toiletsRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/toiletsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/officeRoomText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/toiletsRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Office room - 300 sq ft, Superintend room 200 sq ft, Kitchen 75 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/officeRoomRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/officeRoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+ <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/counselling_guidance_RoomText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/officeRoomRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Counselling and guidance room 120 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/counselling_guidance_RoomRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/counselling_guidance_RoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/workshopRoomText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/counselling_guidance_RoomRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Workshop - 1125 sq ft for 15 children @ 75 sq ft per trainee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/workshopRoomRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/workshopRoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/residence_of_superintendentText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/workshopRoomRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="Residence of superintendent - 2 rooms of 250 sq ft each, kitchen 75 sq ft, bathroom cum toilet 50 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/residence_of_superintendentRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/residence_of_superintendentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/jjb_cwc_roomText"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toBottomOf="@+id/residence_of_superintendentRadioGroup"
+            style="@style/textFieldStyle"
+            android:text="2 rooms for jjb/cwc 300 sq ft each ei. 600 sq ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioGroup
+            android:id="@+id/jjb_cwc_roomRadioGroup"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/jjb_cwc_roomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/jjb_cwc_roomRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/build_accommodation_back"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/back"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/build_accommodation_next"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/next"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
