@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_gray"
     android:id="@+id/cci_institution_constraintLay"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -16,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:background="@android:color/white"
         android:layout_marginTop="10dp"
         android:id="@+id/nameOfInstitutionTxt"
         style="@style/textFieldStyle"
@@ -25,41 +27,51 @@
         android:layout_height="wrap_content"/>
 
     <androidx.appcompat.widget.AppCompatSpinner
+        android:background="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/nameOfInstitutionTxt"
         android:id="@+id/nameOfInstitutionSpinner"
         android:layout_width="match_parent"
         android:entries="@array/nameOfInstitutionListDummy"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="50dp"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputLayoutStyle"
         android:id="@+id/addressField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="@string/address"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_location_city_24"
+        app:counterMaxLength="250"
+        app:counterOverflowTextAppearance="@style/CounterOverFlow"
         app:layout_constraintTop_toBottomOf="@id/nameOfInstitutionSpinner">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:background="@color/white"
+            android:inputType="textMultiLine" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputLayoutStyle"
         android:id="@+id/dateOfRegistrationOfIns"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        app:startIconDrawable="@drawable/ic_baseline_calendar_today_24"
         android:hint="@string/date_of_registration"
         app:layout_constraintTop_toBottomOf="@id/addressField">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateOfRegistrationEditText"
             android:layout_width="match_parent"
             android:background="@color/white"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
             android:layout_height="wrap_content"
             android:inputType="text" />
 
@@ -69,24 +81,30 @@
         android:id="@+id/dateOfVisitField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24"
         android:layout_marginTop="5dp"
         android:hint="@string/date_of_visit"
         app:layout_constraintTop_toBottomOf="@id/dateOfRegistrationOfIns">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateOfVisitEditText"
             android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
             android:inputType="text"
             android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputLayoutStyle"
         android:id="@+id/noOfSanctionedStrength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        app:startIconDrawable="@drawable/ic_baseline_people_outline_24"
         android:hint="@string/no_of_sanctioned_strength"
         app:layout_constraintTop_toBottomOf="@id/dateOfVisitField">
 
@@ -100,6 +118,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        app:startIconDrawable="@drawable/ic_baseline_people_24"
         android:id="@+id/noOfChildrenTheTimeOfVisit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -115,46 +134,67 @@
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/noOfBoys"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="@string/no_of_boys"
-        app:layout_constraintTop_toBottomOf="@id/noOfChildrenTheTimeOfVisit">
 
-        <com.google.android.material.textfield.TextInputEditText
+    <LinearLayout
+        android:id="@+id/noBoysGirls"
+        app:layout_constraintTop_toBottomOf="@id/noOfChildrenTheTimeOfVisit"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            style="@style/textInputLayoutStyle"
+            android:id="@+id/noOfBoys"
+            app:startIconDrawable="@drawable/ic_baseline_male_24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:inputType="number"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginTop="5dp"
+            android:hint="@string/no_of_boys"
+            app:layout_constraintTop_toBottomOf="@id/noOfChildrenTheTimeOfVisit">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/noOfGirls"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:hint="@string/no_of_girls"
-        app:layout_constraintTop_toBottomOf="@id/noOfBoys">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:id="@+id/noOfGirls"
+            app:startIconDrawable="@drawable/ic_baseline_female_24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:inputType="number"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginTop="5dp"
+            android:hint="@string/no_of_girls"
+            app:layout_constraintTop_toBottomOf="@id/noOfBoys">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputLayoutStyle"
+        app:startIconDrawable="@drawable/ic_baseline_groups_24"
         android:id="@+id/total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="@string/total"
-        app:layout_constraintTop_toBottomOf="@id/noOfGirls">
+        app:layout_constraintTop_toBottomOf="@id/noBoysGirls">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -165,6 +205,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputLayoutStyle"
         android:id="@+id/avgStrengthForTheMonth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -182,9 +223,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputLayoutStyle"
         android:id="@+id/grant_aidReceivedInPreviousYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:layout_marginTop="5dp"
         android:hint="@string/grant_aid_received_in_previous_year"
         app:layout_constraintTop_toBottomOf="@id/avgStrengthForTheMonth">
@@ -198,8 +241,9 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatTextView
+        style="@style/textInputLayoutStyle"
         android:id="@+id/OwnOrRent"
-        style="@style/textFieldStyle"
+       android:background="@android:color/white"
         android:layout_marginTop="5dp"
         android:text="Own/Rent"
         app:layout_constraintTop_toBottomOf="@+id/grant_aidReceivedInPreviousYear"
@@ -211,6 +255,7 @@
         android:id="@+id/own_rentRadioGroup"
         app:layout_constraintTop_toBottomOf="@id/OwnOrRent"
         app:singleSelection="true"
+        android:background="@android:color/white"
         app:selectionRequired="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

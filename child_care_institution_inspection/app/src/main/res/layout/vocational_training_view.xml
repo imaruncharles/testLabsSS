@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:id="@+id/dailyRoutineConstraintLay"
     android:layout_height="match_parent"
-    android:background="#22000000">
+    android:id="@+id/vocationTrainingConstraintLay"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/dailyRoutineView"
+        android:id="@+id/vocationalTextView"
         style="@style/textTitleStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Daily Routine"
+        android:text="Vocational training"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <LinearLayout
-        android:id="@+id/regulatedDisciplined_Lay"
+        android:id="@+id/computerOperation"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/dailyRoutineView">
+        app:layout_constraintTop_toBottomOf="@+id/vocationalTextView">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regulated and disciplined daily routine" />
+            android:text="Computer operation" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -57,19 +55,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/personalHygiene_Lay"
+        android:id="@+id/computerRepairMain"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/regulatedDisciplined_Lay">
+        app:layout_constraintTop_toBottomOf="@+id/computerOperation">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Personal hygiene and cleanliness" />
+            android:text="Computer repairing and maintenance" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -96,19 +94,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/schoolingLay"
+        android:id="@+id/dataTypingProcessing"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/personalHygiene_Lay">
+        app:layout_constraintTop_toBottomOf="@+id/computerRepairMain">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="schooling" />
+            android:text="Data typing and processing" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -135,19 +133,58 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/vocationalTrainingLay"
+        android:id="@+id/carpentryLay"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/schoolingLay">
+        app:layout_constraintTop_toBottomOf="@+id/dataTypingProcessing">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vocational training" />
+            android:text="Carpentry" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/fitterTraining"
+        style="@style/questionBackCardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_back_card"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/carpentryLay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitter Training" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -174,19 +211,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/recreationAndSports"
+        android:id="@+id/automobileRepairLay"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/vocationalTrainingLay">
+        app:layout_constraintTop_toBottomOf="@+id/fitterTraining">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recreation and sports" />
+            android:text="Automobile repair and servicing" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -213,19 +250,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/timeForMusicAndWatchingTvLay"
+        android:id="@+id/weldingLay"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/recreationAndSports">
+        app:layout_constraintTop_toBottomOf="@+id/automobileRepairLay">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time for music and watching television" />
+            android:text="Welding" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -252,19 +289,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/groupActivityLay"
+        android:id="@+id/textilePrinting"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/timeForMusicAndWatchingTvLay">
+        app:layout_constraintTop_toBottomOf="@+id/weldingLay">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Group activities" />
+            android:text="Textile Printing" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -291,19 +328,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/prayerAndCommunityLay"
+        android:id="@+id/tailoring"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/groupActivityLay">
+        app:layout_constraintTop_toBottomOf="@+id/textilePrinting">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prayer and community singing" />
+            android:text="Tailoring" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -330,19 +367,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/specialProgramForHoliday"
+        android:id="@+id/beauticianLay"
         style="@style/questionBackCardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/question_back_card"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/prayerAndCommunityLay">
+        app:layout_constraintTop_toBottomOf="@+id/tailoring">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/textFieldStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Special programs for Sundays and holidays" />
+            android:text="Beautician" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -368,14 +405,247 @@
             android:hint="Remarks" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/electricalWiring"
+        style="@style/questionBackCardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_back_card"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/beauticianLay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electrical wiring" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobileRepairing"
+        style="@style/questionBackCardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_back_card"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/electricalWiring">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Repairing" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/printingAndBookBinding"
+        style="@style/questionBackCardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_back_card"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/mobileRepairing">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Printing and book binding" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soapMarketing"
+        style="@style/questionBackCardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_back_card"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/printingAndBookBinding">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soap marketing" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/candleMaking"
+        style="@style/questionBackCardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_back_card"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/soapMarketing">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candle making" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anyOtherVocation"
+        style="@style/questionBackCardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_back_card"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/candleMaking">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any other vocation/ trade based on local needs which has employment potential" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="Remarks" />
+    </LinearLayout>
 
     <LinearLayout
         android:weightSum="2"
-        app:layout_constraintTop_toBottomOf="@+id/specialProgramForHoliday"
+        app:layout_constraintTop_toBottomOf="@+id/anyOtherVocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/dailyRoutineBack"
+            android:id="@+id/vocationTrainingBack"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="@string/back"
@@ -383,7 +653,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
         <Button
-            android:id="@+id/dailyRoutineNext"
+            android:id="@+id/vocationTrainingNext"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="@string/next"

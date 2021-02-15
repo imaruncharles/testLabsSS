@@ -4,23 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:id="@+id/mainScrollView"
     tools:context=".ui.CciInspectionForm">
-<androidx.constraintlayout.widget.ConstraintLayout
+  <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:paddingBottom="20dp"
     android:layout_height="match_parent">
 
-
-
-
     <LinearLayout
+        android:layout_margin="5dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include
+        b<include
             android:id="@+id/cci_inspection_institution_formLayout"
             layout="@layout/cci_inspection_instituation_form"/>
         <TextView
@@ -49,6 +45,12 @@
 
         <include layout="@layout/clothing_bedding_view"
             android:id="@+id/clothingBeddingIncludeLay"/>
+
+        <include layout="@layout/daily_routine_view"
+            android:id="@+id/dailyRoutineIncludeLay"/>
+
+        <include layout="@layout/education_view"
+            android:id="@+id/educationIncludeLay"/>
     </LinearLayout>
 
 

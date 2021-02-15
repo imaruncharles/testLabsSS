@@ -9,6 +9,7 @@
     </style>
 
     <style name="textTitleStyle">
+        <item name="android:background">@color/white</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@android:color/holo_blue_dark</item>
         <item name="android:padding">10dp</item>
@@ -54,7 +55,16 @@
 
     </style>
 
+    <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+    </style>
 
+
+    <style name="textInputLayoutStyle">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
 
 
     <style name="AppNoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
