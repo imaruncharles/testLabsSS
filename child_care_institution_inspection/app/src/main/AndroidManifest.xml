@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cci_inspection">
+        <activity android:name=".ui.ui.inspection.InspectionTestActivity"></activity>
         <activity
             android:name=".ui.CciHome"
             android:label="@string/title_activity_cci_home"
-            android:theme="@style/Theme.Cci_inspection.NoActionBar"></activity>
-        <!-- <activity android:name=".ui.CciInspectionForm"></activity>activity -->
-        <activity android:name=".ui.Login"
+            android:theme="@style/Theme.Cci_inspection.NoActionBar" /> <!-- <activity android:name=".ui.CciInspectionForm"></activity>activity -->
+        <activity
+            android:name=".ui.Login"
             android:theme="@style/Theme.Cci_inspection.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -25,6 +25,9 @@ class NewInspection : Fragment() {
     private lateinit var clothingBeddingViewBinding: ClothingBeddingViewBinding
     private lateinit var dailyRoutineViewBinding: DailyRoutineViewBinding
     private lateinit var educationViewBinding: EducationViewBinding
+    private lateinit var vocationalTrainingViewBinding: VocationalTrainingViewBinding
+    private lateinit var specialUnitChildrenViewBinding: SpecialUnitChildrenViewBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,6 +45,8 @@ class NewInspection : Fragment() {
        clothingBeddingViewBinding = activityCciInspectionFormBinding.clothingBeddingIncludeLay
         dailyRoutineViewBinding = activityCciInspectionFormBinding.dailyRoutineIncludeLay
         educationViewBinding = activityCciInspectionFormBinding.educationIncludeLay
+        vocationalTrainingViewBinding = activityCciInspectionFormBinding.vocationalTrainingIncludeLay
+        specialUnitChildrenViewBinding = activityCciInspectionFormBinding.specialUnitChildrenIncludeLay
 
 
         val view = activityCciInspectionFormBinding.root
@@ -63,6 +68,8 @@ class NewInspection : Fragment() {
         clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
         dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
         educationViewBinding.educationConstraint.visibility = View.GONE
+        vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
+        specialUnitChildrenViewBinding.specialUnitChildrenConstraintLay.visibility = View.GONE
 
         cciInspectionInstituationFormBinding.institutionFormNextBtn.setOnClickListener {
             cciInspectionInstituationFormBinding.cciInstitutionConstraintLay.visibility = View.GONE
@@ -74,6 +81,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -88,6 +96,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
         buildingAccommodationBinding.buildAccommodationNext.setOnClickListener {
@@ -100,6 +109,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -114,6 +124,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -128,6 +139,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -141,6 +153,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -153,6 +166,7 @@ class NewInspection : Fragment() {
             dietScaleViewBinding.dietScaleConstraintLay.visibility = View.GONE
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -166,6 +180,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -179,6 +194,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -192,6 +208,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -205,6 +222,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.VISIBLE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -218,6 +236,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -231,6 +250,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.VISIBLE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -244,6 +264,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.VISIBLE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -257,6 +278,7 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
             educationViewBinding.educationConstraint.visibility = View.VISIBLE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 
@@ -270,6 +292,66 @@ class NewInspection : Fragment() {
             clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
             dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.VISIBLE
             educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
+            scrollViewTop()
+        }
+
+        educationViewBinding.educationNext.setOnClickListener {
+            cciInspectionInstituationFormBinding.cciInstitutionConstraintLay.visibility = View.GONE
+            buildingAccommodationBinding.buildingAndAccommodationConstraintLay.visibility = View.GONE
+            sanitationHygieneViewBinding.sanitationHygieneConstraintlayout.visibility = View.GONE
+            staffPatternFormViewBinding.staffPatternConstraintLayout.visibility = View.GONE
+            medicalFecilitiesViewBinding.medicalFacilityConstraintLayout.visibility = View.GONE
+            dietScaleViewBinding.dietScaleConstraintLay.visibility = View.GONE
+            clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
+            dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
+            educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.VISIBLE
+            scrollViewTop()
+        }
+
+        vocationalTrainingViewBinding.vocationTrainingBack.setOnClickListener {
+            cciInspectionInstituationFormBinding.cciInstitutionConstraintLay.visibility = View.GONE
+            buildingAccommodationBinding.buildingAndAccommodationConstraintLay.visibility = View.GONE
+            sanitationHygieneViewBinding.sanitationHygieneConstraintlayout.visibility = View.GONE
+            staffPatternFormViewBinding.staffPatternConstraintLayout.visibility = View.GONE
+            medicalFecilitiesViewBinding.medicalFacilityConstraintLayout.visibility = View.GONE
+            dietScaleViewBinding.dietScaleConstraintLay.visibility = View.GONE
+            clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
+            dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
+            educationViewBinding.educationConstraint.visibility = View.VISIBLE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
+            scrollViewTop()
+        }
+
+        vocationalTrainingViewBinding.vocationTrainingNext.setOnClickListener {
+            cciInspectionInstituationFormBinding.cciInstitutionConstraintLay.visibility = View.GONE
+            buildingAccommodationBinding.buildingAndAccommodationConstraintLay.visibility = View.GONE
+            sanitationHygieneViewBinding.sanitationHygieneConstraintlayout.visibility = View.GONE
+            staffPatternFormViewBinding.staffPatternConstraintLayout.visibility = View.GONE
+            medicalFecilitiesViewBinding.medicalFacilityConstraintLayout.visibility = View.GONE
+            dietScaleViewBinding.dietScaleConstraintLay.visibility = View.GONE
+            clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
+            dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
+            educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.GONE
+            specialUnitChildrenViewBinding.specialUnitChildrenConstraintLay.visibility = View.VISIBLE
+            scrollViewTop()
+        }
+
+
+        specialUnitChildrenViewBinding.specialUnitChildrenBack.setOnClickListener {
+            cciInspectionInstituationFormBinding.cciInstitutionConstraintLay.visibility = View.GONE
+            buildingAccommodationBinding.buildingAndAccommodationConstraintLay.visibility = View.GONE
+            sanitationHygieneViewBinding.sanitationHygieneConstraintlayout.visibility = View.GONE
+            staffPatternFormViewBinding.staffPatternConstraintLayout.visibility = View.GONE
+            medicalFecilitiesViewBinding.medicalFacilityConstraintLayout.visibility = View.GONE
+            dietScaleViewBinding.dietScaleConstraintLay.visibility = View.GONE
+            clothingBeddingViewBinding.clothingBeddingConstraintLay.visibility = View.GONE
+            dailyRoutineViewBinding.dailyRoutineConstraintLay.visibility = View.GONE
+            educationViewBinding.educationConstraint.visibility = View.GONE
+            vocationalTrainingViewBinding.vocationTrainingConstraintLay.visibility = View.VISIBLE
+            specialUnitChildrenViewBinding.specialUnitChildrenConstraintLay.visibility = View.GONE
             scrollViewTop()
         }
 

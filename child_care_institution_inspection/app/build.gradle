@@ -57,4 +57,6 @@ dependencies {
     implementation 'me.omidh:liquidradiobutton:1.0.01'
     implementation 'com.github.chivorns.androidx:smartmaterialspinner:1.2.1'
 
+    implementation 'com.github.iammert:TileProgressView:0.1'
+
 }

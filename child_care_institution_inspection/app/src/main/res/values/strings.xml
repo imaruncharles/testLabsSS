@@ -35,6 +35,8 @@
     <string name="document_verification">Document Verification</string>
     <string name="remarks">Remarks</string>
     <string name="rent">Rent</string>
+    <string name="cci_name">CCI Name</string>
+    <string name="lorum_ipsun">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</string>
 
     <string-array name="nameOfInstitutionListDummy">
         <item>Select Institution</item>

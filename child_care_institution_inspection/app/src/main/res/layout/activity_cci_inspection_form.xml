@@ -51,6 +51,12 @@
 
         <include layout="@layout/education_view"
             android:id="@+id/educationIncludeLay"/>
+
+        <include layout="@layout/vocational_training_view"
+            android:id="@+id/vocationalTrainingIncludeLay"/>
+
+        <include layout="@layout/special_unit_children_view"
+            android:id="@+id/specialUnitChildrenIncludeLay"/>
     </LinearLayout>
 
 

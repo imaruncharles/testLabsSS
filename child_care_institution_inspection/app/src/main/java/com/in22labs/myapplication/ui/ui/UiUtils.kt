@@ -65,5 +65,11 @@ class UiUtils {
 
         inceptionDataList.add(InspectionData("Building and accommodation", insFieldList_1))
         inceptionDataList.add(InspectionData("Sanitation and hygiene", insFieldList_2))
+        inceptionDataList.add(InspectionData("Staff Pattern", insFieldList_2))
+        inceptionDataList.add(InspectionData("Minimum standard of Service", insFieldList_2))
+        inceptionDataList.add(InspectionData("Rehabilitation and social re integration", insFieldList_2))
+        inceptionDataList.add(InspectionData("Home Management Committee", insFieldList_2))
+        inceptionDataList.add(InspectionData("Others", insFieldList_2))
+
     }
 }
